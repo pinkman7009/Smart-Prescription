@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'constants.dart';
+import 'login_page.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -23,6 +24,10 @@ class Home extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(15.0))),
                     onPressed: () {
                       print('Button Clicked.');
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Login_Page()));
                     },
                     textColor: Colors.white,
                     color: k_button_color,
