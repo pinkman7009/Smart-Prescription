@@ -14,3 +14,18 @@ final BoxDecoration k_screen_decor = BoxDecoration(
   end: FractionalOffset.bottomCenter,
   stops: [0.0, 1.0],
 ));
+const k_text_field_decor = InputDecoration(
+    filled: true,
+    fillColor: Colors.white,
+    icon: Icon(
+      Icons.email,
+      color: Colors.white,
+    ),
+    hintText: "Email",
+    hintStyle: TextStyle(
+      color: Colors.grey,
+    ),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+      borderSide: BorderSide.none,
+    ));
